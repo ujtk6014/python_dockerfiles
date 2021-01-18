@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -rm --tag tanaka_RL
+docker build --rm --tag tanaka_rl .
