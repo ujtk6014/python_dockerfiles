@@ -7,7 +7,7 @@ FROM nvidia/cuda:11.0-devel-ubuntu18.04
 ##                            Additional Packages                           ##
 ############################################################################## 
 RUN apt-get update
-RUN apt-get install -y python3 python3-pip
+RUN apt-get install -y python3 python3-pip git
 
 RUN pip3 install \
     gym \
