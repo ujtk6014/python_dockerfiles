@@ -20,8 +20,7 @@ RUN pip3 install \
     torch \
     torchvision
 
-RUN apt install msttcorefonts -y
-RUN rm ~/.cache/matplotlib -rf
+
 WORKDIR /
 ##############################################################################
 ##                             terminal setting                             ##
