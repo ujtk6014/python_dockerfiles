@@ -7,7 +7,7 @@ FROM nvidia/cuda:11.0-devel-ubuntu18.04
 ##                            Additional Packages                           ##
 ############################################################################## 
 RUN apt-get update
-RUN apt-get install -y python3 python3-pip git
+RUN apt-get install -y python3 python3-pip git nano
 
 RUN pip3 install \
     gym \
@@ -19,6 +19,8 @@ RUN pip3 install \
     matplotlib \
     torch \
     torchvision
+
+RUN git clone https://github.com/ujtk6014/dotfiles.git
 
 WORKDIR /
 ##############################################################################
