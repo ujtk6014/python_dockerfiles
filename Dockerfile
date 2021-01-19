@@ -20,8 +20,6 @@ RUN pip3 install \
     torch \
     torchvision
 
-RUN git clone https://github.com/ujtk6014/dotfiles.git
-
 WORKDIR /
 ##############################################################################
 ##                             terminal setting                             ##
