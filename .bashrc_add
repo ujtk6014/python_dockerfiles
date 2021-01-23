@@ -9,7 +9,7 @@ alias gch='git checkout'
 alias ga='git add -A'
 alias gc='git commit -m'
 alias gf='git fetch'
-
+alias ..='cd ..'
 
 cdls ()
 {
