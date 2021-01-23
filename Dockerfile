@@ -25,4 +25,4 @@ WORKDIR /
 ##############################################################################
 ##                             terminal setting                             ##
 ##############################################################################
-RUN echo source .bashrc_add >> ~/.bashrc
+RUN echo source shared_folder/.bashrc_add >> ~/.bashrc
