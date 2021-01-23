@@ -6,7 +6,7 @@ docker run -it \
     --rm \
     --net host \
     --privileged \
-    --name python_dev \
+    --name tanaka_rl \
     --env DISPLAY=${DISPLAY} \
     --env QT_X11_NO_MITSHM=1 \
     --volume /tmp/.X11-unix:/tmp/.X11-unix \
