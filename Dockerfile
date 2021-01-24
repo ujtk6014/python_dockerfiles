@@ -26,3 +26,9 @@ WORKDIR /
 ##                             terminal setting                             ##
 ##############################################################################
 RUN echo source shared_folder/.bashrc_add >> ~/.bashrc
+
+##############################################################################
+##                             git setting                                  ##
+##############################################################################
+RUN git config --global user.email ujtk6014.m2@keio.jp
+RUN git config --global user.name ujtk6014
