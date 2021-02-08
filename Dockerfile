@@ -32,3 +32,5 @@ RUN echo source shared_folder/.bashrc_add >> ~/.bashrc
 ##                             wandb setting                                ##
 ##############################################################################
 RUN wandb login f30660df99f7e76e15455c3d33fda2379783bcc9
+RUN export LC_ALL=C.UTF-8
+RUN export LANG=C.UTF-8
