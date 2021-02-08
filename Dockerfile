@@ -31,4 +31,4 @@ RUN echo source shared_folder/.bashrc_add >> ~/.bashrc
 ##############################################################################
 ##                             wandb setting                                ##
 ##############################################################################
-RUN wandb login e433cf0d313a05e67015e6fc58c30160180a47f6
+RUN wandb login f30660df99f7e76e15455c3d33fda2379783bcc9
