@@ -1,7 +1,7 @@
 ##############################################################################
 ##                                 Base Image                               ##
 ##############################################################################
-FROM nvidia/cuda:10.2-devel-ubuntu18.04
+FROM nvidia/cuda:11.0-devel-ubuntu18.04
 
 ##############################################################################
 ##                            Additional Packages                           ##
@@ -18,6 +18,7 @@ RUN pip3 install \
     pandas \
     matplotlib \
     torch \
+    wandb \
     torchvision
 
 
@@ -32,3 +33,8 @@ RUN echo source shared_folder/.bashrc_add >> ~/.bashrc
 ##############################################################################
 RUN git config --global user.email ujtk6014.m2@keio.jp
 RUN git config --global user.name ujtk6014
+
+##############################################################################
+##                             wandb setting                                ##
+##############################################################################
+RUN wanb login e433cf0d313a05e67015e6fc58c30160180a47f6
