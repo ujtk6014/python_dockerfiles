@@ -37,4 +37,6 @@ RUN git config --global user.name ujtk6014
 ##############################################################################
 ##                             wandb setting                                ##
 ##############################################################################
-RUN wanb login e433cf0d313a05e67015e6fc58c30160180a47f6
+ENV LC_ALL C.UTF-8
+ENV LANG C.UTF-8
+RUN wandb login f30660df99f7e76e15455c3d33fda2379783bcc9
