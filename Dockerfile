@@ -22,6 +22,7 @@ RUN pip3 install \
     wandb
 
 
+
 WORKDIR /
 ##############################################################################
 ##                             terminal setting                             ##
@@ -37,6 +38,10 @@ RUN git config --global user.name ujtk6014
 ##############################################################################
 ##                             wandb setting                                ##
 ##############################################################################
+<<<<<<< HEAD
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 RUN wandb login f30660df99f7e76e15455c3d33fda2379783bcc9
+=======
+RUN wanb login e433cf0d313a05e67015e6fc58c30160180a47f6
+>>>>>>> 6733e5e1811935c0c965a99ad5e669c2abb4d378
