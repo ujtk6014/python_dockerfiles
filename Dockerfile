@@ -1,7 +1,7 @@
 ##############################################################################
 ##                                 Base Image                               ##
 ##############################################################################
-FROM nvidia/cuda:11.2-devel-ubuntu18.04
+FROM nvidia/cuda:11.1-devel-ubuntu18.04
 
 ##############################################################################
 ##                            Additional Packages                           ##
@@ -17,10 +17,8 @@ RUN pip3 install \
     pylint \
     pandas \
     matplotlib \
-    torch \
     wandb \
-    torchvision
-
+    torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio==0.8.1 -f https://download.pytorch.org/whl/torch_stable.html
 
 WORKDIR /
 ##############################################################################
