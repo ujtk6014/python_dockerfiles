@@ -6,7 +6,7 @@ docker run -it \
     --rm \
     --net host \
     --privileged \
-    --name python_dev \
+    --name python_dev_rinko \
     --env DISPLAY=${DISPLAY} \
     --env QT_X11_NO_MITSHM=1 \
     --volume /tmp/.X11-unix:/tmp/.X11-unix \
@@ -14,4 +14,4 @@ docker run -it \
     --volume ${HOME}/.Xauthority:/root/.Xauthority \
     --volume ${PWD}/../../../python_scripts/:/python_scripts/ \
     --volume ${PWD}/../../../shared_folder:/shared_folder \
-    tanaka_rl
+    ml_rinko_tf_1_2
