@@ -14,4 +14,5 @@ docker run -it \
     --volume ${HOME}/.Xauthority:/root/.Xauthority \
     --volume ${PWD}/../../../python_scripts/:/python_scripts/ \
     --volume ${PWD}/../../../shared_folder:/shared_folder \
+    --volume ${PWD}/../../../.ssh:/root/.ssh \
     tanaka_rl
